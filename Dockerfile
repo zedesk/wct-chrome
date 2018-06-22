@@ -19,5 +19,5 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
   && mv /usr/bin/google-chrome /usr/bin/google-chrome-orig \
   && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
-ADD chrome/google-chrome /usr/bin/google-chrome
+ADD google-chrome /usr/bin/google-chrome
 RUN chmod +x /usr/bin/google-chrome
